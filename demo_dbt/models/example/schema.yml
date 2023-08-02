@@ -1,21 +1,53 @@
-
 version: 2
-
 models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
+  - name: table1
+    description: table1
     columns:
       - name: id
-        description: "The primary key for this table"
-        tests:
-          - unique
-          - not_null
-
-  - name: my_second_dbt_model
-    description: "A starter dbt model"
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: values
+        description: ""
+        meta:
+          dimension:
+            type: number
+  - name: table2crud
+    description: table2
     columns:
       - name: id
-        description: "The primary key for this table"
-        tests:
-          - unique
-          - not_null
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: value
+        description: ""
+      - name: values
+        description: ""
+        meta:
+          dimension:
+            type: number
+  - name: table3
+    description: table3
+    columns:
+      - name: id
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: nilai_table_1
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: nilai_table_2
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: kali
+        description: ""
+        meta:
+          dimension:
+            type: number

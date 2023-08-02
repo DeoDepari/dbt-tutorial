@@ -1,0 +1,15 @@
+version: 2
+models:
+  - name: table2
+    columns:
+      - name: id
+        description: ""
+      
+        meta:
+          dimension:
+            type: number
+      - name: values
+        description: ""
+        meta:
+          dimension:
+            type: number

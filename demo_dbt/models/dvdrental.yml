@@ -1,0 +1,27 @@
+version: 2
+models:
+  - name: dvdrental
+    columns:
+      - name: actor_id
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: first_name
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: last_name
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: last_update
+        description: ""
+        meta:
+          dimension:
+            type: timestamp
+  
+  - name: dvdrentalview
+    description: dvdrentalview
