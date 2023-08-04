@@ -1,3 +1,9 @@
-{{ config(materialized='incremental') }}
+{{ config(materialized='table') }}
 
-select 5 as id,10 as values
+select * from table1
+
+UNION
+
+select
+    4 as id,
+    5 as values

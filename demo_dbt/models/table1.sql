@@ -1,3 +1,3 @@
 {{ config(materialized='table') }}
 
-select 1 as id,1 as values
+select 2 as id,2 as values
